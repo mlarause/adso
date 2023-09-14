@@ -1,0 +1,219 @@
+<html>
+    <title>formularios</title>
+    <head>
+    <meta http-equiv="Content-Type" content="Text/html; charset=utf-8"/>
+    </head>
+    <body>
+        <!--<body background="imagenes/programacion3.png">-->
+        <body bgcolor="silver">
+    <ul id="menu">
+        <li><a href="index.html">Inicio</li></a>
+        <li><a href="formularios.html">Formularios</li></a>
+    </ul>
+    <center>
+        <font size="6" color="brown" face="comic sans ms">Formularios en html</font></center><P>
+    <font size="3" color="brown" face="comic sans MS">Campos de formularios</font><p>
+    <font size="2" color="blue" face="comic sans ms">Campo de seleccion</font><p>
+
+    <pre>
+        <input type="radio" name="estado_civil" value="soltero">Solter@</input>
+        <input type="radio" name="estado_civil" value="casado">Casad@</input>
+        <input type="radio" name="estado_civil" value="union_libre">Union Libre</input>
+        <input type="radio" name="estado_civil" value="viudo">Viud@</input>
+        <input type="radio" name="estado_civil" value="divorciado">Divorciad@</input>
+    </pre><p>
+
+        <font size="2" color="blue" face="comic sans ms">Seleccion Desplegable</font><p>
+        <select name="estado_civil"><p>
+            <option>Solter@</option>
+            <option>Casad@</option>
+            <option>Union libre </option>
+            <option>Viud@</option>
+            <option>Divorsiad@</option>
+        </select><p>
+<font size="3" color="red" face="comic sans ms">Diferentes tipos de campos</font><p>   
+<form>
+Escriba su nombre y apellido <input type="text" name="nombre"><input type="Text" name="apellido"><p>
+Escriba la contraseña <input type="password" name="contra"><p>
+Casilla de verificacion <input type="checkbox" name="casilla"><p>
+seleccion de archivo <input type="file" name="archivo"><p>
+Boton enviar <input type="submit" value="Enviar"><p>
+Boton borrar <input type="reset" value="Borrar"><p>
+Campo correo <input type="email" name="correo" value="@"><p>
+Campo mensaje <textarea name="mensaje"></textarea><p>
+Seleccion de lista con titulo <P>
+<select name="os">
+    <option selected value="0">Elige una opcion</option>
+    <optgroup label="Microsoft">
+        <option value="1">Windows 8 </opcion>
+        <option value="2">Windows 10</option>
+        <option value="3">Windows 11</option>
+        </optgroup>
+    <optgroup label="Linux">
+        <option value="4">Suse</option>
+        <option value="5">Ubuntu</option>
+        <option value="6">Fedora</option>
+    </optgroup>
+</select><p>
+</form><p>
+
+<center>
+<font size="5" color="red" face="comic sans ms">Aplica lo aprendido</font></center>
+
+<form action="www.google.com" method="post">
+<table border="2" bordercolor="red" width="100%" cellspacing="10" cellpading="10">
+<tr><td>
+    Nombre<input type="text" name="nombre" size="25" maxlength="50">
+    Apellido <input type="text" name="apellido" size="25" maxlength="50"></td>
+    <td>Correo Electronico<input type="email" value="@" name="correo" size="40" maxlength="100">
+    Pais<input type="text" name="pais" size="15" maxlength="50">
+    Ciudad <input type="text" name="ciudad" size="15" maxlength="50">
+    </td></tr></table>
+<table border="2" bordercolor="blue" width="100%" cellspacing="10" cellpadding="10">
+    <tr>
+        <td>Edad<br>
+            <input type="radio" name="edad" value="020">0 - 20 años <br>
+            <input type="radio" name="edad" value="2040">20 - 40 años <br>
+            <input type="radio" name="edad" value="4060">40 - 60 años <br>
+            <input type="radio" name="edad" value="60100">60 o mas <br></td>
+            <td>
+                Como nos conociste <br>
+                <input type="checkbox" name="conocer">
+                A travez de un buscador web<br>
+                <input type="checkbox" name="conocer">
+                A travez de un amigo <br>
+                <input type="checkbox" name="conocer">
+                Navegando por la red<br>
+                <input type="checkbox" name="conocer">
+                Otros medios<br></td></tr></table>
+
+    <table border="2" bordecolor="red" width="100%" cellspacing="10" cellpading="10">
+        <td>
+            Opinion de nuestra pagina <br><br>
+            <textarea cols="40" rows="5" name="opinion">Escriba aqui su opnion...</textarea></td>
+            <Td>
+                Tiene algunas sugerencias<br><br>
+                <textarea cols="40" rows="5" name="sugerencia">escriba aca su sugerencia...</textarea><p></Td>
+                    <td>
+                        Cuanto navega en internet (seleccione la que mas de acerque)<br><br>
+                        <select name="frecuencia" size="1">
+                            <option value="1">2 horas al dia
+                            <option value="2">2 a 4 horas al dia
+                            <option value="3">4 a 8 horas al dia
+                            <option value="4">8 a 12 horas al dia
+                            <option value="5">No puedo vivir sin internet
+                        </select><br><br></td></table>
+            <table border="2" bordercolor="blue" whith="50" align="center" cellspacing="10" cellpading="10">
+                <tr>
+                    <td>
+                        <div align="center">
+                            <input type="submit" value="enviar">
+                        </div>
+                    </td>
+                    <td> 
+                        <div align="center">
+                            <input type="reset" value="borrar">
+                        </div>
+                    </td>
+                </tr>
+            </table></form>
+
+<!-- Formulario 2-->
+
+<form action="index.html" method="post">
+    <center>
+        <table border="2" bordercolor="red" width="70%" cellspacing="10" cellpading="0">
+        <tr>
+            <th bgcolor="pink"><font size="1" color="red" face="arial black">Nombre</font></th>
+            <td bgcolor="pink"><font size="1" color="red" face="arial black">
+                <input type="text" name="nombre" size="18" maxlength="18">
+                Fecha de nacimiento 
+                <input type="date" name="nacimiento" size="8" maxlength="8">
+                Numero de documento
+                <input type="number" name="documento" size="8" maxlength="20"
+            </font></td></tr>
+            <tr>
+                <th bgcolor="pink"><font size="1" color="red" face="arial black">Apellidos</font>   
+                </th>
+                <td bgcolor="pink"><font size="1" color="red" face="arial black">
+                    <input type="text" name="apellidos" size="48" maxlength="48">
+                Tipo documento
+                <select>
+                    <option>Cedula</option>
+                    <option>Tarjeta de Identidad</option>
+                    <option>Registro civil</option>
+                    <option>Pasaporte</option>
+                    <option>Cedula de extrangeria</option>
+                </select>
+                </font></td>
+            </tr>
+            <tr>
+                <th bgcolor="pink"><font size="1" color="red" face="arial black">
+                    Pais
+                </font></th>
+                <td bgcolor="pink"><font size="1" color="red" face="arial black"> 
+                    <input type="text" name="pais" size="30" maxlength="100">
+                    Ciudad <input type="text" name="ciudad" size="30" maxlength="100">
+                    RH <select name="rh" size="1">
+                        <option value="1">O+</option>
+                        <option value="2">O-</option>
+                        <option value="3">A+</option>
+                        <option value="4">A-</option>
+                        <option value="5">B+</option>
+                        <option value="6">B-</option>
+                        <option value="7">AB+</option>
+                        <option value="8">AB-</option>
+                    </select>
+                </font></td>        
+            </tr>
+            <tr>
+                <th bgcolor="pink"><font size="1" color="red" face="arial black">Hijos</font></th>
+                <td bgcolor="pink"><font size="1" color="red" face="arial black">
+                    <select name="hijos">
+                        <option value="1">Si</option>
+                        <option value="2">No</option>
+                    </select>
+                    Si selecciono si coloque el numero de hijos
+                    <input type="number" name="hijos" size="30" maxlength="2">
+                    Correo Electronico
+                    <input type="email" name="correo" value="@" size="30" maxlength="100">
+                </font></td>
+            </tr></table>
+            <table border="2" bordercolor="red" width="70%" cellspacing="10" cellpading="0">
+                <tr>
+                    <td bgcolor="yellow"><font size="1" color="red" face="arial black">
+                        Emfermedades que padece
+                    <textarea name="enfer" cols="40" rows="5"></textarea>
+                    </font></td>
+                    <td bgcolor="yellow"><font size="1" color="red" face="arial black">
+                        Toma algun medicamento
+                        <select name="medica">
+                            <option value="1">SI</option>
+                            <option value="2">No</option></select>
+                    </font></td>
+                    <td bgcolor="yellow"><font size="1" color="red" face="arial black">
+                        Si su respuesta fue si escriba cuales
+                    <textarea name="medicame" cols="40" rows="5"></textarea>
+                    </font></td>
+                </tr>
+                <tr>
+                    <td bgcolor="purple"><font size="1" color="red" face="arial black">
+                        <input type="submit" value="Enviar">
+                    </td></font>
+                    <td bgcolor="purple">
+                        <input type="reset" value="Borrar">
+                    </td>
+                </tr>
+            </table>
+            </center>            
+   </form>
+
+            
+    
+
+
+
+
+        
+    
+
